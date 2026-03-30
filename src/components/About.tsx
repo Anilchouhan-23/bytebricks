@@ -46,19 +46,18 @@ export default function About() {
             We are Leading Company
           </h2>
           <p className="text-cyan text-lg font-medium mb-5">
-            Fastest repair service with best price!
+            Innovative software solutions for your digital journey!
           </p>
           <p className="text-gray-600 mb-4 leading-relaxed">
             We at ByteBricks Store are a group of dedicated engineers with more
-            than a decade of experience in project designing, planning,
-            execution, and maintenance. Specializing in CCTV installation,
-            networking, and IT infrastructure, we have worked on a wide range of
-            major projects involving safety systems, access control, burglar
-            alarm systems, and surveillance solutions.
+            than a decade of experience in software architecture, web development,
+            and digital systems. Specializing in custom applications,
+            cloud architecture, and IT consulting, we have worked on a wide range of
+            major projects involving robust SaaS platforms and mobile applications.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            From corporate offices to residential buildings, educational
-            institutions to healthcare facilities, we provide end-to-end IT
+            From emerging startups to established enterprises,
+            we provide end-to-end software
             solutions tailored to your specific needs.
           </p>
           <div className="flex gap-10 mt-7">

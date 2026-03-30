@@ -21,23 +21,20 @@ const sections = [
   {
     title: "Services",
     links: [
-      { label: "EPABX / Intercom", href: "/services/epabx" },
-      { label: "Computer Repair", href: "/services/computer-repair" },
-      { label: "CCTV Installation", href: "/services/cctv-installation" },
-      { label: "Network Solutions", href: "/services/network-solutions" },
-      { label: "Attendance Machines", href: "/services/attendance-machines" },
+      { label: "Custom Software", href: "/services/custom-software" },
+      { label: "SaaS Solutions", href: "/services/saas-solutions" },
+      { label: "Mobile Apps", href: "/services/mobile-apps" },
+      { label: "Cloud Services", href: "/services/cloud-architecture" },
+      { label: "IT Consulting", href: "/services/it-consulting" },
       { label: "Bulk SMS", href: "/services/bulk-sms" },
     ],
   },
   {
     title: "Products",
     links: [
-      { label: "CCTV Cameras", href: "/products/cctv-cameras" },
-      { label: "Networking Equipment", href: "/products/networking-equipment" },
-      { label: "Computers & Laptops", href: "/products/computers-laptops" },
-      { label: "Attendance Systems", href: "/products/attendance-systems" },
-      { label: "EPABX Systems", href: "/products/epabx-systems" },
       { label: "Software & Licenses", href: "/products/software-licenses" },
+      { label: "Web Templates", href: "/products/web-templates" },
+      { label: "SaaS Platforms", href: "/products/saas-platforms" },
     ],
   },
   {

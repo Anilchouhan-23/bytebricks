@@ -23,8 +23,8 @@ export default function OffersPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <div className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1 hover:shadow-[0_12px_35px_rgba(0,0,0,0.1)] transition-all">
               <div className="bg-gradient-to-br from-cyan to-navy-dark p-8 text-center">
-                <i className="fas fa-video text-5xl text-white/80 mb-3" />
-                <h3 className="text-xl font-bold text-white">CCTV Package</h3>
+                <i className="fas fa-code text-5xl text-white/80 mb-3" />
+                <h3 className="text-xl font-bold text-white">SaaS Package</h3>
               </div>
               <div className="p-6">
                 <div className="flex items-baseline gap-2 mb-3">
@@ -33,16 +33,16 @@ export default function OffersPage() {
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> 4 HD Cameras
+                    <i className="fas fa-check text-cyan text-xs" /> Custom Web App
                   </li>
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> DVR System Included
+                    <i className="fas fa-check text-cyan text-xs" /> Included Admin Panel
                   </li>
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> Free Installation
+                    <i className="fas fa-check text-cyan text-xs" /> Free Hosting (1 Year)
                   </li>
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> 1 Year Warranty
+                    <i className="fas fa-check text-cyan text-xs" /> 1 Year Maintenance
                   </li>
                 </ul>
                 <a
@@ -57,8 +57,8 @@ export default function OffersPage() {
             <div className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1 hover:shadow-[0_12px_35px_rgba(0,0,0,0.1)] transition-all">
               <div className="bg-gradient-to-br from-navy to-navy-dark p-8 text-center relative">
                 <span className="absolute top-3 right-3 bg-yellow-400 text-navy text-xs font-bold px-3 py-1 rounded-full">POPULAR</span>
-                <i className="fas fa-network-wired text-5xl text-white/80 mb-3" />
-                <h3 className="text-xl font-bold text-white">Networking Bundle</h3>
+                <i className="fas fa-mobile-screen text-5xl text-white/80 mb-3" />
+                <h3 className="text-xl font-bold text-white">App Bundle</h3>
               </div>
               <div className="p-6">
                 <div className="flex items-baseline gap-2 mb-3">
@@ -67,16 +67,16 @@ export default function OffersPage() {
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> Complete LAN Setup
+                    <i className="fas fa-check text-cyan text-xs" /> Cross-platform Mobile App
                   </li>
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> Router Configuration
+                    <i className="fas fa-check text-cyan text-xs" /> Secure API Configuration
                   </li>
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> Firewall Included
+                    <i className="fas fa-check text-cyan text-xs" /> Integrated Notifications
                   </li>
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> Free AMC (3 months)
+                    <i className="fas fa-check text-cyan text-xs" /> Free Store Submission
                   </li>
                 </ul>
                 <a
@@ -90,8 +90,8 @@ export default function OffersPage() {
 
             <div className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:-translate-y-1 hover:shadow-[0_12px_35px_rgba(0,0,0,0.1)] transition-all">
               <div className="bg-gradient-to-br from-navy-light to-cyan p-8 text-center">
-                <i className="fas fa-fingerprint text-5xl text-white/80 mb-3" />
-                <h3 className="text-xl font-bold text-white">Attendance System</h3>
+                <i className="fas fa-cloud text-5xl text-white/80 mb-3" />
+                <h3 className="text-xl font-bold text-white">Cloud Package</h3>
               </div>
               <div className="p-6">
                 <div className="flex items-baseline gap-2 mb-3">
@@ -100,16 +100,16 @@ export default function OffersPage() {
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> Biometric Device
+                    <i className="fas fa-check text-cyan text-xs" /> Cloud Setup & Migration
                   </li>
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> Software License
+                    <i className="fas fa-check text-cyan text-xs" /> Scalable Infrastructure
                   </li>
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> Free Installation
+                    <i className="fas fa-check text-cyan text-xs" /> Cost Optimization
                   </li>
                   <li className="text-gray-600 text-sm flex items-center gap-2">
-                    <i className="fas fa-check text-cyan text-xs" /> Training Included
+                    <i className="fas fa-check text-cyan text-xs" /> Security Training
                   </li>
                 </ul>
                 <a

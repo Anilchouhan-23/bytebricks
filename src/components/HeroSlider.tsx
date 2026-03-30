@@ -1,35 +1,46 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import Image from "next/image";
 
 const slides = [
   {
-    image: "/images/slides/slide1.jpg",
-    title: "Professional CCTV Installation",
-    subtitle: "Secure Your Business & Home",
-    desc: "HD & IP camera systems from Hikvision, CP Plus & HoneyWell with remote viewing, night vision & cloud storage.",
-    btn: { text: "CCTV Services", href: "/services/cctv-installation" },
+    gradient: "from-[#0a1628] via-[#0d2040] to-[#0a2a3a]",
+    accent: "rgba(0,212,255,0.15)",
+    icon: "fa-code",
+    iconColor: "text-cyan",
+    title: "Custom Software Development",
+    subtitle: "Built for Your Business Needs",
+    desc: "Robust, scalable, and secure applications to streamline your operations and drive growth.",
+    btn: { text: "Our Services", href: "/services/custom-software" },
   },
   {
-    image: "/images/slides/slide2.jpg",
-    title: "Complete Networking Solutions",
-    subtitle: "LAN, WAN & Firewall Setup",
-    desc: "Enterprise-grade networking infrastructure with structured cabling, router configuration & network security from SonicWall & TP-Link.",
-    btn: { text: "Network Solutions", href: "/services/network-solutions" },
+    gradient: "from-[#0d1f3a] via-[#0a1e35] to-[#051528]",
+    accent: "rgba(0,180,255,0.12)",
+    icon: "fa-laptop-code",
+    iconColor: "text-blue-400",
+    title: "Innovative SaaS Solutions",
+    subtitle: "Digital Transformation",
+    desc: "Modern web applications and software platforms tailored for enterprise and startups alike.",
+    btn: { text: "SaaS Products", href: "/services/saas-solutions" },
   },
   {
-    image: "/images/slides/slide3.jpg",
-    title: "Expert Computer Repair",
-    subtitle: "Fastest Repair with Best Price",
-    desc: "Desktop, laptop & server repair services with hardware troubleshooting, data recovery & annual maintenance contracts.",
-    btn: { text: "Repair Services", href: "/services/computer-repair" },
+    gradient: "from-[#051528] via-[#0a2235] to-[#0d1a2e]",
+    accent: "rgba(0,212,255,0.10)",
+    icon: "fa-cloud",
+    iconColor: "text-cyan",
+    title: "Cloud Architecture",
+    subtitle: "Scalable Infrastructure",
+    desc: "Deploy, manage, and scale your applications with modern cloud technologies and reliable hosting.",
+    btn: { text: "Cloud Services", href: "/services/cloud-architecture" },
   },
   {
-    image: "/images/slides/slide4.jpg",
-    title: "Complete IT Infrastructure",
-    subtitle: "One Stop IT Solutions Provider",
-    desc: "EPABX, attendance machines, bulk SMS, web services & more. ByteBricks Store is your trusted technology partner.",
+    gradient: "from-[#0a1e35] via-[#0d2845] to-[#051528]",
+    accent: "rgba(100,180,255,0.12)",
+    icon: "fa-mobile-screen",
+    iconColor: "text-blue-300",
+    title: "Complete Digital Partner",
+    subtitle: "One Stop Tech Solutions",
+    desc: "Web services, mobile app development, bulk SMS, and comprehensive consulting — your trusted technology partner.",
     btn: { text: "All Services", href: "/services" },
   },
 ];
@@ -65,26 +76,40 @@ export default function HeroSlider() {
 
   return (
     <section className="relative overflow-hidden" id="home">
-      {/* Background Image */}
       <div className="relative min-h-[520px] md:min-h-[560px]">
+        {/* Gradient backgrounds */}
         {slides.map((s, i) => (
           <div
             key={i}
-            className={`absolute inset-0 transition-opacity duration-700 ${
+            className={`absolute inset-0 bg-gradient-to-br ${s.gradient} transition-opacity duration-700 ${
               i === current ? "opacity-100" : "opacity-0"
             }`}
           >
-            <Image
-              src={s.image}
-              alt={s.title}
-              fill
-              className="object-cover"
-              priority={i === 0}
+            {/* Animated glow orb */}
+            <div
+              className="absolute top-1/2 right-[15%] -translate-y-1/2 w-[500px] h-[500px] rounded-full blur-3xl"
+              style={{ background: s.accent }}
+            />
+            <div
+              className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full blur-3xl"
+              style={{ background: s.accent }}
             />
           </div>
         ))}
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-navy/70 z-[1]" />
+
+        {/* Big icon visual (right side, background) */}
+        <div
+          key={`icon-${current}`}
+          className="absolute right-[8%] top-1/2 -translate-y-1/2 hidden lg:flex items-center justify-center w-[320px] h-[320px] opacity-10 animate-fadeSlideIn"
+        >
+          <i className={`fas ${slide.icon} text-[220px] text-white`} />
+        </div>
+
+        {/* Decorative grid lines */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: "linear-gradient(rgba(0,212,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,212,255,1) 1px, transparent 1px)",
+          backgroundSize: "60px 60px"
+        }} />
 
         {/* Content */}
         <div className="relative z-10 w-[90%] max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 py-20 md:py-28 min-h-[520px]">
@@ -92,8 +117,8 @@ export default function HeroSlider() {
             key={current}
             className="flex-1 max-w-xl text-center lg:text-left animate-fadeSlideIn"
           >
-            <span className="inline-block bg-cyan/15 text-cyan text-sm font-semibold px-4 py-1.5 rounded-full mb-5 border border-cyan/25 backdrop-blur-sm">
-              <i className="fas fa-star mr-2 text-yellow-400" />
+            <span className="inline-flex items-center gap-2 bg-cyan/15 text-cyan text-sm font-semibold px-4 py-1.5 rounded-full mb-5 border border-cyan/25 backdrop-blur-sm">
+              <i className={`fas ${slide.icon} text-xs`} />
               {slide.subtitle}
             </span>
             <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-5 drop-shadow-lg">

@@ -10,12 +10,9 @@ export interface Product {
 }
 
 const categories = [
-  { label: "CCTV Cameras", href: "/products/cctv-cameras" },
-  { label: "Networking Equipment", href: "/products/networking-equipment" },
-  { label: "Computers & Laptops", href: "/products/computers-laptops" },
-  { label: "Attendance Systems", href: "/products/attendance-systems" },
-  { label: "EPABX Systems", href: "/products/epabx-systems" },
   { label: "Software & Licenses", href: "/products/software-licenses" },
+  { label: "Web Templates", href: "/products/web-templates" },
+  { label: "SaaS Platforms", href: "/products/saas-platforms" },
 ];
 
 export default function ProductPageLayout({

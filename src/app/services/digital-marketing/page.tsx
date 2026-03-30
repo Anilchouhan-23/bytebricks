@@ -4,48 +4,48 @@ import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 
 const capabilities = [
-  { title: "Transactional SMS", desc: "Instantly deliver crucial OTPs, alerts, and system notifications with maximum priority.", icon: "fa-bolt" },
-  { title: "Promotional SMS", desc: "Launch effective marketing campaigns reaching thousands of potential customers instantly.", icon: "fa-bullhorn" },
-  { title: "RCS Business Messaging", desc: "Next-gen rich communication services enabling interactive media, buttons, and carousels right within native SMS apps.", icon: "fa-comment-dots" },
+  { title: "Search Engine Optimization", desc: "Technical and content-driven SEO to boost your organic rankings, traffic, and domain authority on Google.", icon: "fa-magnifying-glass-chart" },
+  { title: "Social Media Campaigns", desc: "Data-driven advertising and community management across platforms like LinkedIn, Instagram, and Facebook.", icon: "fa-hashtag" },
+  { title: "Email Marketing Automations", desc: "Personalized, high-converting email funnels using modern digital tools to nurture leads into loyal customers.", icon: "fa-envelope-open-text" },
 ];
 
 const processSteps = [
-  { step: "01", title: "Account & DLT Registration", desc: "We guide you through the mandatory DLT compliance process to approve sender IDs." },
-  { step: "02", title: "Template Approval", desc: "Creating and approving standard message templates per TRAI regulations." },
-  { step: "03", title: "API Integration", desc: "Connecting your backend software to our robust SMS gateways." },
-  { step: "04", title: "Campaign Launch", desc: "Uploading contacts, firing campaigns, and analyzing delivery reports." },
+  { step: "01", title: "Market Research", desc: "Analyzing your ideal customer profiles, competitor gaps, and high-value keywords." },
+  { step: "02", title: "Content Strategy", desc: "Drafting engaging social media calendars, blogs, and compelling email copy." },
+  { step: "03", title: "Campaign Execution", desc: "Deploying targeted ads and utilizing premium digital marketing tools." },
+  { step: "04", title: "Analytics & ROI", desc: "Tracking conversions, cost-per-click, and optimizing funnels for maximum return." },
 ];
 
-export default function BulkSMSPage() {
+export default function DigitalMarketingPage() {
   return (
     <>
       <TopBar />
       <Navbar />
-      <PageBanner title="Bulk SMS Services" breadcrumb="Bulk SMS" />
+      <PageBanner title="Digital Marketing" breadcrumb="Digital Marketing" />
 
       {/* Overview Section */}
       <section className="py-20">
         <div className="w-[90%] max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="flex-1">
-              <span className="text-cyan font-semibold text-sm uppercase tracking-wider mb-2 block">Messaging Solutions</span>
+              <span className="text-cyan font-semibold text-sm uppercase tracking-wider mb-2 block">Growth & Visibility</span>
               <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6 leading-tight">
-                Reliable, Fast, and Scalable SMS Communications
+                Data-Driven SEO, Social Media, and Email Marketing
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4 text-lg">
-                Even in the era of social media, SMS boasts an unparalleled 98% open rate. It remains the most direct and reliable way to communicate critical information to your customers.
+                Building great software or maintaining incredible digital tools is just half the battle. If your target audience cannot find your SaaS or applications, growth stalls. We provide end-to-end digital marketing solutions.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                ByteBricks offers robust messaging pipelines designed for high-volume enterprise throughput. With deep API integration, comprehensive delivery receipts, and full DLT compliance advisory, we simplify the complex world of telecom regulations so you can focus on your audience.
+                Our suite of high-performance digital marketing services leverages the latest SEO techniques, deep social media targeting algorithms, and automated email drip campaigns. We utilize premium digital tools to maximize visibility on search engines, engage your social audience, and turn raw traffic into paying subscribers and loyal enterprise software clients.
               </p>
               <a href="/enquiry" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold bg-cyan text-navy hover:bg-cyan-dark hover:shadow-lg hover:-translate-y-1 transition-all">
-                Start Your Campaign <i className="fas fa-arrow-right text-sm" />
+                Grow Your Brand <i className="fas fa-arrow-right text-sm" />
               </a>
             </div>
             <div className="flex-1 relative">
               <div className="absolute inset-0 bg-cyan/10 rounded-3xl -rotate-3 scale-105" />
               <div className="bg-gradient-to-br from-navy to-navy-dark rounded-3xl p-12 relative flex items-center justify-center aspect-square shadow-2xl overflow-hidden">
-                <i className="fas fa-comment-sms text-[120px] text-cyan/80 drop-shadow-[0_0_30px_rgba(0,212,255,0.3)]" />
+                <i className="fas fa-bullseye text-[120px] text-cyan/80 drop-shadow-[0_0_30px_rgba(0,212,255,0.3)] animate-pulse" />
               </div>
             </div>
           </div>
@@ -56,8 +56,8 @@ export default function BulkSMSPage() {
       <section className="py-20 bg-gray-50 border-t border-gray-100">
         <div className="w-[90%] max-w-[1200px] mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-navy mb-4">Messaging Products</h2>
-            <p className="text-gray-500 text-lg">Tools designed to ensure your message reaches its destination securely.</p>
+            <h2 className="text-3xl font-bold text-navy mb-4">Marketing Capabilities</h2>
+            <p className="text-gray-500 text-lg">Premium digital marketing solutions deploying cutting-edge digital tools.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {capabilities.map(cap => (
@@ -77,8 +77,8 @@ export default function BulkSMSPage() {
       <section className="py-20">
         <div className="w-[90%] max-w-[1200px] mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-navy mb-4">Getting Started</h2>
-            <p className="text-gray-500 text-lg">A straightforward process to becoming a verified SMS sender.</p>
+            <h2 className="text-3xl font-bold text-navy mb-4">Our Growth Roadmap</h2>
+            <p className="text-gray-500 text-lg">A structured funnel to scale your customer acquisition strategies.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
             <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-100 -translate-y-1/2 -z-10" />

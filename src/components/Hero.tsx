@@ -12,13 +12,13 @@ export default function Hero() {
         <div className="flex-1 max-w-xl text-center lg:text-left">
           <h1 className="text-3xl md:text-[2.8rem] font-bold leading-tight mb-5">
             Building Smarter{" "}
-            <span className="text-cyan">IT Infrastructure</span> For Your
+            <span className="text-cyan">Software Solutions</span> For Your
             Business
           </h1>
           <p className="text-lg text-blue-200/80 mb-8 leading-relaxed">
-            ByteBricks Store is your trusted partner for CCTV installation,
-            networking solutions, computer repair, and comprehensive IT
-            services. We deliver reliable, secure, and cost-effective technology
+            ByteBricks Store is your trusted partner for custom software
+            development, cloud architecture, SaaS products, and comprehensive
+            digital services. We deliver reliable, secure, and scalable technology
             solutions.
           </p>
           <div className="flex gap-4 flex-wrap justify-center lg:justify-start">

@@ -5,28 +5,28 @@ import { useScrollReveal } from "./useScrollReveal";
 
 const testimonials = [
   {
-    text: "ByteBricks Store has been instrumental in setting up our entire IT infrastructure. Their CCTV installation was professional and the quality of cameras is outstanding. Highly recommended!",
+    text: "ByteBricks Store has been instrumental in designing our custom software. Their development process was professional and the quality is outstanding. Highly recommended!",
     name: "Rajesh Kumar",
     company: "TechVista Pvt. Ltd",
     image: "/images/clients/client1.jpg",
     rating: 5,
   },
   {
-    text: "We have 50+ cameras installed and 100+ cameras under AMC with ByteBricks. Their support team is responsive and the maintenance service is exceptional. Great partnership!",
+    text: "We use ByteBricks SaaS solutions for tracking our sales. Their support team is responsive and the cloud infrastructure is exceptional. Great partnership!",
     name: "Priya Sharma",
     company: "InnoTech Solutions",
     image: "/images/clients/client2.jpg",
     rating: 5,
   },
   {
-    text: "From networking to attendance systems, ByteBricks handles all our IT needs. Their team is knowledgeable, punctual, and delivers quality work every time. A trusted technology partner.",
+    text: "From web templates to mobile apps, ByteBricks handles all our digital needs. Their team is knowledgeable, punctual, and delivers quality work every time. A trusted partner.",
     name: "Anil Reddy",
     company: "Global Enterprises",
     image: "/images/clients/client3.jpg",
     rating: 5,
   },
   {
-    text: "Excellent service and competitive pricing. ByteBricks set up our complete office network and EPABX system within the committed timeline. Very satisfied with their professionalism.",
+    text: "Excellent service and competitive pricing. ByteBricks built our new e-commerce platform within the committed timeline. Very satisfied with their professionalism.",
     name: "Sanjay Mehta",
     company: "Bright Education Group",
     image: "/images/clients/client1.jpg",

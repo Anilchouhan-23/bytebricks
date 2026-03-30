@@ -13,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "ByteBricks Store | IT Solutions & Security Systems",
   description:
-    "ByteBricks Store - Leading provider of CCTV installation, networking solutions, computer repair services, and IT infrastructure in India.",
+    "ByteBricks Store - Leading provider of custom software, SaaS solutions, cloud architecture, and comprehensive digital services in India.",
 };
 
 export default function RootLayout({

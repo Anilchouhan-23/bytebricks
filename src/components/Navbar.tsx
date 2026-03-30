@@ -4,19 +4,20 @@ import { useState } from "react";
 import Link from "next/link";
 
 const serviceDropdown = [
-  { label: "Computer Repair Services", href: "/services/computer-repair" },
-  { label: "Networking Solutions", href: "/services/network-solutions" },
-  { label: "CCTV Installations", href: "/services/cctv-installation" },
-  { label: "EPABX Installation", href: "/services/epabx" },
-  { label: "Attendance Machines", href: "/services/attendance-machines" },
+  { label: "Custom Software Development", href: "/services/custom-software" },
+  { label: "SaaS Solutions", href: "/services/saas-solutions" },
+  { label: "Mobile App Development", href: "/services/mobile-apps" },
+  { label: "Cloud Architecture", href: "/services/cloud-architecture" },
+  { label: "IT Consulting", href: "/services/it-consulting" },
+  { label: "Digital Marketing", href: "/services/digital-marketing" },
   { label: "Bulk SMS Services", href: "/services/bulk-sms" },
 ];
 
 const webServicesDropdown = [
-  { label: "Domain Services", href: "/services" },
-  { label: "Hosting Services", href: "/services" },
-  { label: "Mail Services", href: "/services" },
-  { label: "RCS Message Services", href: "/services" },
+  { label: "Domain Services", href: "/services/web-services" },
+  { label: "Hosting Services", href: "/services/web-services" },
+  { label: "Mail Services", href: "/services/web-services" },
+  { label: "RCS Message Services", href: "/services/bulk-sms" },
 ];
 
 const navLinks = [

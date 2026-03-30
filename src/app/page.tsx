@@ -4,7 +4,6 @@ import HeroSlider from "@/components/HeroSlider";
 import About from "@/components/About";
 import Highlights from "@/components/Highlights";
 import Services from "@/components/Services";
-import CTABanner from "@/components/CTABanner";
 import Brands from "@/components/Brands";
 import Testimonials from "@/components/Testimonials";
 import EnquiryForm from "@/components/EnquiryForm";
@@ -20,7 +19,6 @@ export default function Home() {
       <About />
       <Highlights />
       <Services />
-      <CTABanner />
       <Brands />
       <Testimonials />
       <EnquiryForm />

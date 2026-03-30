@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const serviceLinks = [
-  { label: "EPABX / Intercom", href: "/services/epabx" },
-  { label: "Computer Repair", href: "/services/computer-repair" },
-  { label: "CCTV Installation", href: "/services/cctv-installation" },
-  { label: "Network Solutions", href: "/services/network-solutions" },
-  { label: "Attendance Machines", href: "/services/attendance-machines" },
+  { label: "Custom Software", href: "/services/custom-software" },
+  { label: "SaaS Solutions", href: "/services/saas-solutions" },
+  { label: "Mobile Apps", href: "/services/mobile-apps" },
+  { label: "Cloud Services", href: "/services/cloud-architecture" },
+  { label: "IT Consulting", href: "/services/it-consulting" },
   { label: "Bulk SMS", href: "/services/bulk-sms" },
 ];
 
@@ -31,12 +31,12 @@ export default function Footer() {
               ByteBricks Store
             </h4>
             <p className="text-sm leading-relaxed mb-2">
-              We Deal with <strong className="text-gray-300">Hikvision, CPPlus, HoneyWell,
-              Realtime, TimeWatch, Dell, HP</strong>
+              We specalize in <strong className="text-gray-300">Custom Software,
+              Web Applications, Cloud Architecture, and SaaS Solutions</strong>
             </p>
             <p className="text-sm leading-relaxed mb-3">
-              Your trusted partner for IT solutions, CCTV installation,
-              networking, and comprehensive technology services.
+              Your trusted partner for robust software architecture, digital 
+              transformation, and comprehensive IT services.
             </p>
             <div className="flex gap-3 mt-4">
               {["facebook-f", "twitter", "linkedin-in", "instagram"].map(

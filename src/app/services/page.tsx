@@ -6,37 +6,37 @@ import Link from "next/link";
 
 const services = [
   {
-    icon: "fa-video",
-    title: "CCTV Installation",
-    href: "/services/cctv-installation",
-    desc: "Professional CCTV surveillance solutions for corporate, industrial, domestic, and commercial establishments with HD and IP camera systems.",
+    icon: "fa-code",
+    title: "Custom Software",
+    href: "/services/custom-software",
+    desc: "Tailor-made software solutions designed to meet your specific business requirements and streamline your workflows operations.",
   },
   {
-    icon: "fa-network-wired",
-    title: "Networking Solutions",
-    href: "/services/network-solutions",
-    desc: "Complete LAN/WAN networking infrastructure including structured cabling, router configuration, firewall setup, and network management.",
+    icon: "fa-cloud",
+    title: "Cloud Architecture",
+    href: "/services/cloud-architecture",
+    desc: "Scalable and secure cloud infrastructure setup, migration, and management ensuring your applications run seamlessly.",
   },
   {
-    icon: "fa-laptop-medical",
-    title: "Computer Repair",
-    href: "/services/computer-repair",
-    desc: "Expert repair services for desktops, laptops, and servers. Hardware troubleshooting, OS installation, data recovery, and AMC.",
+    icon: "fa-mobile-screen",
+    title: "Mobile App Development",
+    href: "/services/mobile-apps",
+    desc: "High-performance native and cross-platform mobile applications that provide intuitive experiences on both iOS and Android.",
   },
   {
-    icon: "fa-phone-volume",
-    title: "EPABX / Intercom",
-    href: "/services/epabx",
-    desc: "Enterprise communication systems with EPABX and intercom installation, configuration, and maintenance for seamless connectivity.",
+    icon: "fa-laptop-code",
+    title: "SaaS Solutions",
+    href: "/services/saas-solutions",
+    desc: "End-to-end development of Software-as-a-service platforms perfectly suited for enterprise and scalable businesses.",
   },
   {
-    icon: "fa-fingerprint",
-    title: "Attendance Machines",
-    href: "/services/attendance-machines",
-    desc: "Biometric and RFID attendance systems with software integration, access control solutions for offices, factories, and institutions.",
+    icon: "fa-chart-line",
+    title: "IT Consulting",
+    href: "/services/it-consulting",
+    desc: "Expert technical guidance and strategy planning to navigate complex digital transformations and infrastructure upgrades.",
   },
   {
-    icon: "fa-comment-sms",
+    icon: "fa-envelope-open-text",
     title: "Bulk SMS",
     href: "/services/bulk-sms",
     desc: "Affordable bulk SMS and RCS messaging services for marketing campaigns, notifications, OTP delivery, and business communication.",
@@ -57,7 +57,7 @@ export default function ServicesPage() {
               What We Offer
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              ByteBricks Store provides comprehensive IT and security solutions
+              ByteBricks Store provides comprehensive software and digital solutions
               tailored for businesses of all sizes across India.
             </p>
             <div className="w-15 h-[3px] bg-cyan mx-auto mt-4 rounded" />

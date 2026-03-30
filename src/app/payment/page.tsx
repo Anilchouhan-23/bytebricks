@@ -92,11 +92,11 @@ const paymentMethods = [
 ];
 
 const serviceOptions = [
-  "CCTV Installation",
-  "Networking / LAN",
-  "Computer Repair",
-  "Access Control / Attendance Machine",
-  "EPABX / Intercom",
+  "Custom Software",
+  "SaaS Solutions",
+  "Mobile Apps",
+  "Cloud Architecture",
+  "IT Consulting",
   "Bulk SMS Services",
   "Web Services",
   "Other",
