@@ -1,4 +1,3 @@
-import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
@@ -46,7 +45,6 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      <TopBar />
       <Navbar />
       <PageBanner title="Our Services" breadcrumb="Services" />
 

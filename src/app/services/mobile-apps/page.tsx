@@ -1,4 +1,3 @@
-import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
@@ -19,7 +18,6 @@ const processSteps = [
 export default function MobileAppsPage() {
   return (
     <>
-      <TopBar />
       <Navbar />
       <PageBanner title="Mobile App Development" breadcrumb="Mobile Apps" />
 

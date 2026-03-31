@@ -1,0 +1,9 @@
+origin	https://github.com/Anilchouhan-23/bytebricks.git (fetch)
+origin	https://github.com/Anilchouhan-23/bytebricks.git (push)
+softwarepilot	https://github.com/Anilchouhan-23/softwarepilot.online (fetch)
+softwarepilot	https://github.com/Anilchouhan-23/softwarepilot.online (push)
+commit af93b3da3c668081373804f57a2ca78ec35a7c07
+Author: Anil Chouhan <anil.bca214@gmail.com>
+Date:   Tue Mar 31 17:08:00 2026 +0530
+
+    Rebranded to Software Pilot
