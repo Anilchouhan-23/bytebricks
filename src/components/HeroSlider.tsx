@@ -4,8 +4,8 @@ import { useState, useEffect, useCallback } from "react";
 
 const slides = [
   {
-    gradient: "from-[#0a1628] via-[#0d2040] to-[#0a2a3a]",
-    accent: "rgba(0,212,255,0.15)",
+    gradient: "from-[#0d0b1e] via-[#1a0e35] to-[#200d40]",
+    accent: "rgba(168,85,247,0.18)",
     icon: "fa-code",
     iconColor: "text-cyan",
     title: "Custom Software Development",
@@ -14,18 +14,18 @@ const slides = [
     btn: { text: "Our Services", href: "/services/custom-software" },
   },
   {
-    gradient: "from-[#0d1f3a] via-[#0a1e35] to-[#051528]",
-    accent: "rgba(0,180,255,0.12)",
+    gradient: "from-[#180b30] via-[#120a28] to-[#0d0b1e]",
+    accent: "rgba(147,51,234,0.15)",
     icon: "fa-laptop-code",
-    iconColor: "text-blue-400",
+    iconColor: "text-purple-400",
     title: "Innovative SaaS Solutions",
     subtitle: "Digital Transformation",
     desc: "Modern web applications and software platforms tailored for enterprise and startups alike.",
     btn: { text: "SaaS Products", href: "/services/saas-solutions" },
   },
   {
-    gradient: "from-[#051528] via-[#0a2235] to-[#0d1a2e]",
-    accent: "rgba(0,212,255,0.10)",
+    gradient: "from-[#0d0b1e] via-[#1e0d3a] to-[#14082a]",
+    accent: "rgba(168,85,247,0.12)",
     icon: "fa-cloud",
     iconColor: "text-cyan",
     title: "Cloud Architecture",
@@ -34,10 +34,10 @@ const slides = [
     btn: { text: "Cloud Services", href: "/services/cloud-architecture" },
   },
   {
-    gradient: "from-[#0a1e35] via-[#0d2845] to-[#051528]",
-    accent: "rgba(100,180,255,0.12)",
+    gradient: "from-[#14082a] via-[#1e1040] to-[#0d0b1e]",
+    accent: "rgba(192,132,252,0.14)",
     icon: "fa-mobile-screen",
-    iconColor: "text-blue-300",
+    iconColor: "text-purple-300",
     title: "Complete Digital Partner",
     subtitle: "One Stop Tech Solutions",
     desc: "Web services, mobile app development, bulk SMS, and comprehensive consulting — your trusted technology partner.",
@@ -107,7 +107,7 @@ export default function HeroSlider() {
 
         {/* Decorative grid lines */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: "linear-gradient(rgba(0,212,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,212,255,1) 1px, transparent 1px)",
+          backgroundImage: "linear-gradient(rgba(168,85,247,1) 1px, transparent 1px), linear-gradient(90deg, rgba(168,85,247,1) 1px, transparent 1px)",
           backgroundSize: "60px 60px"
         }} />
 

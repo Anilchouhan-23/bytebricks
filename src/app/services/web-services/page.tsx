@@ -36,7 +36,7 @@ export default function WebServicesPage() {
                 Your online presence begins with a solid foundation. We provide the essential building blocks for your digital business, making it simple to get online securely and professionally.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                From finding the perfect top-level domain to configuring high-performance SSD hosting environments and setting up custom branded business emails, ByteBricks acts as your single point of contact for all fundamental web infrastructure needs.
+                From finding the perfect top-level domain to configuring high-performance SSD hosting environments and setting up custom branded business emails, Software Pilot acts as your single point of contact for all fundamental web infrastructure needs.
               </p>
               <a href="/enquiry" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold bg-cyan text-navy hover:bg-cyan-dark hover:shadow-lg hover:-translate-y-1 transition-all">
                 Get Your Domain <i className="fas fa-arrow-right text-sm" />

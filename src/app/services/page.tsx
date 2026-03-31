@@ -57,7 +57,7 @@ export default function ServicesPage() {
               What We Offer
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              ByteBricks Store provides comprehensive software and digital solutions
+              Software Pilot provides comprehensive software and digital solutions
               tailored for businesses of all sizes across India.
             </p>
             <div className="w-15 h-[3px] bg-cyan mx-auto mt-4 rounded" />

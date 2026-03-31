@@ -11,9 +11,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "ByteBricks Store | IT Solutions & Security Systems",
+  title: "SoftwarePilot | Custom Software & Digital Solutions",
   description:
-    "ByteBricks Store - Leading provider of custom software, SaaS solutions, cloud architecture, and comprehensive digital services in India.",
+    "SoftwarePilot - Leading provider of custom software, SaaS solutions, cloud architecture, and comprehensive digital services in India. Visit softwarepilot.online",
 };
 
 export default function RootLayout({

@@ -4,12 +4,12 @@ export default function TopBar() {
       <div className="w-[90%] max-w-[1200px] mx-auto flex justify-between items-center flex-wrap gap-2">
         <div className="flex gap-5 items-center flex-wrap">
           <span>
-            <i className="fas fa-map-marker-alt text-cyan mr-1.5" /> Hyderabad,
-            Telangana, India
+            <i className="fas fa-map-marker-alt text-cyan mr-1.5" /> Gurgaon,
+            Delhi, India
           </span>
           <span>
             <i className="fas fa-envelope text-cyan mr-1.5" />{" "}
-            info@bytebricks.store
+            info@softwarepilot.online
           </span>
           <span>
             <i className="fas fa-phone text-cyan mr-1.5" /> +91 98765 43210

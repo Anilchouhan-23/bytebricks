@@ -36,7 +36,7 @@ export default function BulkSMSPage() {
                 Even in the era of social media, SMS boasts an unparalleled 98% open rate. It remains the most direct and reliable way to communicate critical information to your customers.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                ByteBricks offers robust messaging pipelines designed for high-volume enterprise throughput. With deep API integration, comprehensive delivery receipts, and full DLT compliance advisory, we simplify the complex world of telecom regulations so you can focus on your audience.
+                Software Pilot offers robust messaging pipelines designed for high-volume enterprise throughput. With deep API integration, comprehensive delivery receipts, and full DLT compliance advisory, we simplify the complex world of telecom regulations so you can focus on your audience.
               </p>
               <a href="/enquiry" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold bg-cyan text-navy hover:bg-cyan-dark hover:shadow-lg hover:-translate-y-1 transition-all">
                 Start Your Campaign <i className="fas fa-arrow-right text-sm" />

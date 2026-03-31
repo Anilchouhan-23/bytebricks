@@ -7,9 +7,9 @@ import Link from "next/link";
 const posts = [
   {
     id: 1,
-    title: "Software Solutions in Hyderabad - Complete Guide",
+    title: "Software Solutions in Gurgaon - Complete Guide",
     excerpt:
-      "Looking for reliable custom software solutions in Hyderabad? ByteBricks Store provides complete end-to-end development, architecture, and consulting for businesses of all sizes.",
+      "Looking for reliable custom software solutions in Gurgaon? Software Pilot provides complete end-to-end development, architecture, and consulting for businesses of all sizes.",
     date: "24 Mar 2026",
     category: "Software",
     icon: "fa-code",

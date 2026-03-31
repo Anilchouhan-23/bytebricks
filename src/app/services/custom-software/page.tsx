@@ -36,7 +36,7 @@ export default function CustomSoftwarePage() {
                 Off-the-shelf software often forces businesses to change their workflows to fit the tool. We build systems that fit your business perfectly. 
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                ByteBricks engineers develop highly scalable, deeply customized application architectures. Whether you need a sophisticated ERP, an internal operational tool, or a consumer-facing application, our full-stack team brings your vision to reality securely and efficiently.
+                Software Pilot engineers develop highly scalable, deeply customized application architectures. Whether you need a sophisticated ERP, an internal operational tool, or a consumer-facing application, our full-stack team brings your vision to reality securely and efficiently.
               </p>
               <a href="/enquiry" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold bg-cyan text-navy hover:bg-cyan-dark hover:shadow-lg hover:-translate-y-1 transition-all">
                 Discuss Your Project <i className="fas fa-arrow-right text-sm" />

@@ -27,7 +27,7 @@ const products = [
     href: "/products/saas-platforms",
     icon: "fa-cloud",
     image: "/images/slides/slide3.jpg",
-    brands: "ByteBricks Solutions",
+    brands: "Software Pilot Solutions",
     items: ["HRMS Systems", "CRM Applications", "Inventory Management", "Billing Software", "Support Ticket Systems"],
   },
 ];

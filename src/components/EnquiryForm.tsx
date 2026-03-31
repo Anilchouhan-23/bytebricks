@@ -44,9 +44,9 @@ export default function EnquiryForm() {
           </p>
           <div className="flex flex-col gap-4">
             {[
-              { icon: "fa-map-marker-alt", text: "Hyderabad, Telangana, India", label: "Location" },
+              { icon: "fa-map-marker-alt", text: "Gurgaon, Delhi, India", label: "Location" },
               { icon: "fa-phone", text: "+91 98765 43210", label: "Phone" },
-              { icon: "fa-envelope", text: "info@bytebricks.store", label: "Email" },
+              { icon: "fa-envelope", text: "info@softwarepilot.online", label: "Email" },
               { icon: "fa-clock", text: "Mon - Sat: 9:00 AM - 7:00 PM", label: "Hours" },
             ].map((item) => (
               <div key={item.icon} className="flex items-center gap-3.5 group">

@@ -16,7 +16,7 @@ export default function Hero() {
             Business
           </h1>
           <p className="text-lg text-blue-200/80 mb-8 leading-relaxed">
-            ByteBricks Store is your trusted partner for custom software
+            Software Pilot is your trusted partner for custom software
             development, cloud architecture, SaaS products, and comprehensive
             digital services. We deliver reliable, secure, and scalable technology
             solutions.

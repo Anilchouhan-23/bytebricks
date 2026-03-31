@@ -16,21 +16,21 @@ export default function ShippingPolicyPage() {
 
           <h3 className="text-lg font-semibold text-navy mt-8 mb-3">1. Delivery Areas</h3>
           <p className="text-gray-600 mb-4">
-            ByteBricks Store delivers products and provides installation services primarily
-            in Hyderabad and surrounding areas. For other locations, please contact us to
+            Software Pilot delivers products and provides installation services primarily
+            in Gurgaon and surrounding areas. For other locations, please contact us to
             check availability and shipping charges.
           </p>
 
           <h3 className="text-lg font-semibold text-navy mt-8 mb-3">2. Delivery Time</h3>
           <p className="text-gray-600 mb-4">
-            Standard delivery within Hyderabad takes 1-3 business days. For outstation
+            Standard delivery within Gurgaon takes 1-3 business days. For outstation
             deliveries, shipping may take 5-7 business days depending on the location.
             Installation services are scheduled based on mutual convenience.
           </p>
 
           <h3 className="text-lg font-semibold text-navy mt-8 mb-3">3. Shipping Charges</h3>
           <p className="text-gray-600 mb-4">
-            Local delivery within Hyderabad is free for orders above INR 5,000. For smaller
+            Local delivery within Gurgaon is free for orders above INR 5,000. For smaller
             orders and outstation shipping, charges will be communicated at the time of order
             confirmation.
           </p>

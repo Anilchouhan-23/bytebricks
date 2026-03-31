@@ -12,11 +12,11 @@ const bankAccounts = [
     bankIcon: "fa-building-columns",
     bankColor: "#22409a",
     fields: [
-      { label: "Account Name", value: "ByteBricks Store" },
+      { label: "Account Name", value: "SoftwarePilot" },
       { label: "Account Number", value: "39876543210" },
       { label: "Bank", value: "State Bank of India" },
       { label: "IFSC Code", value: "SBIN0012345" },
-      { label: "Branch", value: "Hyderabad, Telangana" },
+      { label: "Branch", value: "Gurgaon, Delhi" },
     ],
   },
   {
@@ -24,11 +24,11 @@ const bankAccounts = [
     bankIcon: "fa-university",
     bankColor: "#004b8d",
     fields: [
-      { label: "Account Name", value: "ByteBricks Store" },
+      { label: "Account Name", value: "SoftwarePilot" },
       { label: "Account Number", value: "50200012345678" },
       { label: "Bank", value: "HDFC Bank" },
       { label: "IFSC Code", value: "HDFC0001234" },
-      { label: "Branch", value: "Hyderabad, Telangana" },
+      { label: "Branch", value: "Gurgaon, Delhi" },
     ],
   },
 ];
@@ -39,7 +39,7 @@ const paymentMethods = [
     title: "UPI Payment",
     desc: "Pay instantly using any UPI app — Google Pay, PhonePe, Paytm, etc.",
     details: [
-      "UPI ID: pay@bytebricks.store",
+      "UPI ID: pay@softwarepilot.online",
       "Scan QR code on invoice",
       "Instant confirmation",
       "No extra charges",
@@ -72,7 +72,7 @@ const paymentMethods = [
     title: "Cheque / DD",
     desc: "Pay via cheque or demand draft for large orders and corporate clients.",
     details: [
-      "In favour of: ByteBricks Store",
+      "In favour of: SoftwarePilot",
       "Subject to clearance",
       "Suitable for bulk orders",
       "Corporate invoicing available",

@@ -5,28 +5,28 @@ import { useScrollReveal } from "./useScrollReveal";
 
 const testimonials = [
   {
-    text: "ByteBricks Store has been instrumental in designing our custom software. Their development process was professional and the quality is outstanding. Highly recommended!",
+    text: "Software Pilot has been instrumental in designing our custom software. Their development process was professional and the quality is outstanding. Highly recommended!",
     name: "Rajesh Kumar",
     company: "TechVista Pvt. Ltd",
     image: "/images/clients/client1.jpg",
     rating: 5,
   },
   {
-    text: "We use ByteBricks SaaS solutions for tracking our sales. Their support team is responsive and the cloud infrastructure is exceptional. Great partnership!",
+    text: "We use Software Pilot SaaS solutions for tracking our sales. Their support team is responsive and the cloud infrastructure is exceptional. Great partnership!",
     name: "Priya Sharma",
     company: "InnoTech Solutions",
     image: "/images/clients/client2.jpg",
     rating: 5,
   },
   {
-    text: "From web templates to mobile apps, ByteBricks handles all our digital needs. Their team is knowledgeable, punctual, and delivers quality work every time. A trusted partner.",
+    text: "From web templates to mobile apps, Software Pilot handles all our digital needs. Their team is knowledgeable, punctual, and delivers quality work every time. A trusted partner.",
     name: "Anil Reddy",
     company: "Global Enterprises",
     image: "/images/clients/client3.jpg",
     rating: 5,
   },
   {
-    text: "Excellent service and competitive pricing. ByteBricks built our new e-commerce platform within the committed timeline. Very satisfied with their professionalism.",
+    text: "Excellent service and competitive pricing. Software Pilot built our new e-commerce platform within the committed timeline. Very satisfied with their professionalism.",
     name: "Sanjay Mehta",
     company: "Bright Education Group",
     image: "/images/clients/client1.jpg",
