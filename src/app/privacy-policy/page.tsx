@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Privacy Policy",
+  description:
+    "Read the ByteBricks Store privacy policy to understand how we collect, use, and protect your information.",
+  path: "/privacy-policy",
+  keywords: ["Privacy Policy", "Data Protection", "ByteBricks Legal"],
+});
 
 export default function PrivacyPolicyPage() {
   return (

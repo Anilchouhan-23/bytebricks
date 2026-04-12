@@ -8,6 +8,22 @@ import Testimonials from "@/components/Testimonials";
 import EnquiryForm from "@/components/EnquiryForm";
 import MapSection from "@/components/MapSection";
 import Footer from "@/components/Footer";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Home",
+  description:
+    "ByteBricks Store provides custom software, SaaS, cloud architecture, and IT consulting services for modern businesses.",
+  path: "/",
+  keywords: [
+    "ByteBricks",
+    "Software Development Company",
+    "Cloud Solutions",
+    "SaaS Development",
+    "IT Services India",
+  ],
+  image: "/images/slides/slide1.jpg",
+});
 
 export default function Home() {
   return (

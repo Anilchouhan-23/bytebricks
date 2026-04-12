@@ -30,8 +30,8 @@ export default function About() {
         <div className="flex-1 min-w-[280px]">
           <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden relative shadow-[0_8px_30px_rgba(0,0,0,0.12)]">
             <Image
-              src="/images/slides/slide1.jpg"
-              alt="ByteBricks Store - IT Solutions"
+              src="/images/about-workspace.jpg"
+              alt="ByteBricks Store - Software Development Team"
               fill
               className="object-cover"
             />

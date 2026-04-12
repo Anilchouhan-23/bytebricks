@@ -2,6 +2,20 @@ import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Services",
+  description:
+    "Discover ByteBricks IT services including custom software, cloud architecture, mobile apps, SaaS, and digital consulting.",
+  path: "/services",
+  keywords: [
+    "IT Services",
+    "Custom Software Development",
+    "Cloud Architecture Services",
+    "Mobile App Development",
+  ],
+});
 
 const services = [
   {

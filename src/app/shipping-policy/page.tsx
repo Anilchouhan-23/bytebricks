@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Shipping Policy",
+  description:
+    "Read ByteBricks shipping terms, delivery timelines, charges, and support details for product dispatch.",
+  path: "/shipping-policy",
+  keywords: ["Shipping Policy", "Delivery Policy", "ByteBricks Legal"],
+});
 
 export default function ShippingPolicyPage() {
   return (

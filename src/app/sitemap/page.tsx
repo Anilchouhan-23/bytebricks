@@ -2,6 +2,15 @@ import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Sitemap",
+  description:
+    "Browse all important ByteBricks pages, services, products, and policy links in one place.",
+  path: "/sitemap",
+  keywords: ["Sitemap", "ByteBricks Navigation", "Website Structure"],
+});
 
 const sections = [
   {
@@ -43,6 +52,7 @@ const sections = [
       { label: "Returns & Refund Policy", href: "/returns-and-refund" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Shipping Policy", href: "/shipping-policy" },
+      { label: "Affiliate Disclaimer", href: "/affiliate-disclaimer" },
     ],
   },
 ];

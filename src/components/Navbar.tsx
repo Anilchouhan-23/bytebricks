@@ -20,14 +20,6 @@ const webServicesDropdown = [
   { label: "RCS Message Services", href: "/services/bulk-sms" },
 ];
 
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Enquiry", href: "/enquiry" },
-  { label: "Offers", href: "/offers" },
-  { label: "Payment Options", href: "/payment" },
-  { label: "Blog", href: "/blog" },
-];
-
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [serviceOpen, setServiceOpen] = useState(false);

@@ -1,79 +1,18 @@
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 import Link from "next/link";
+import {
+  getAllBlogPosts,
+  getAllBlogTags,
+  getRecentBlogPosts,
+  formatBlogDate,
+} from "@/data/blogPosts";
 
-const posts = [
-  {
-    id: 1,
-    title: "Software Solutions in Hyderabad - Complete Guide",
-    excerpt:
-      "Looking for reliable custom software solutions in Hyderabad? ByteBricks Store provides complete end-to-end development, architecture, and consulting for businesses of all sizes.",
-    date: "24 Mar 2026",
-    category: "Software",
-    icon: "fa-code",
-  },
-  {
-    id: 2,
-    title: "Cloud Infrastructure Setup for Business",
-    excerpt:
-      "Scale your business globally with our professional cloud solutions. We work with leading platforms like AWS and Azure to modernize your application architecture.",
-    date: "24 Mar 2026",
-    category: "Cloud",
-    icon: "fa-cloud-arrow-up",
-  },
-  {
-    id: 3,
-    title: "How to Choose the Best SaaS Platform for Your Business",
-    excerpt:
-      "A complete guide to selecting the right SaaS solutions. Compare custom in-house software versus established platforms for enterprise and startup use.",
-    date: "16 Sep 2025",
-    category: "SaaS",
-    icon: "fa-laptop-code",
-  },
-  {
-    id: 4,
-    title: "Choosing the Right IT Consulting Partner",
-    excerpt:
-      "How to find a reliable IT consulting service for your business. Tips on selecting the right strategists for digital transformation and enterprise architecture.",
-    date: "12 Sep 2025",
-    category: "Consulting",
-    icon: "fa-chart-line",
-  },
-  {
-    id: 5,
-    title: "Benefits of Cross-platform Mobile Apps",
-    excerpt:
-      "Why your business needs a mobile application. Explore the difference between native and cross-platform apps to enhance your user engagement.",
-    date: "05 Aug 2025",
-    category: "Mobile",
-    icon: "fa-mobile-screen",
-  },
-  {
-    id: 6,
-    title: "API vs Microservices: Which Architecture is Right?",
-    excerpt:
-      "Compare traditional monolithic models with modern microservices. Understand development costs, features and scalability to make the right choice.",
-    date: "20 Jul 2025",
-    category: "Architecture",
-    icon: "fa-server",
-  },
-];
-
-const tags = [
-  "Custom Software",
-  "SaaS",
-  "Cloud Migration",
-  "Cloud Architecture",
-  "IT Consulting",
-  "Mobile Apps",
-  "API Development",
-  "Web Hosting",
-  "React",
-  "Bulk SMS",
-];
-
-const recentPosts = posts.slice(0, 5);
+const posts = getAllBlogPosts();
+const tags = getAllBlogTags();
+const recentPosts = getRecentBlogPosts(5);
 
 export default function BlogPage() {
   return (
@@ -88,50 +27,43 @@ export default function BlogPage() {
             <div className="space-y-8">
               {posts.map((post) => (
                 <article
-                  key={post.id}
-                  className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_35px_rgba(0,0,0,0.1)] transition-all"
+                  key={post.slug}
+                  className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_35px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300"
                 >
-                  {/* Image placeholder */}
-                  <div className="bg-gradient-to-br from-navy-light to-navy-dark h-[250px] flex items-center justify-center relative">
-                    <i
-                      className={`fas ${post.icon} text-7xl text-white/15`}
+                  {/* Featured Image */}
+                  <div className="relative h-[260px] overflow-hidden">
+                    <Image
+                      src={post.featuredImage}
+                      alt={post.title}
+                      fill
+                      className="object-cover hover:scale-105 transition-transform duration-500"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                     <span className="absolute bottom-4 left-4 bg-cyan text-navy text-xs font-bold px-3 py-1.5 rounded">
-                      {post.date}
+                      {formatBlogDate(post.publishedAt)}
                     </span>
-                    <span className="absolute top-4 right-4 bg-white/10 backdrop-blur-sm text-white text-xs font-medium px-3 py-1.5 rounded-full border border-white/10">
+                    <span className="absolute top-4 right-4 bg-white/15 backdrop-blur-md text-white text-xs font-medium px-3 py-1.5 rounded-full border border-white/20">
                       {post.category}
                     </span>
                   </div>
-                  <div className="p-6">
-                    <h2 className="text-xl font-bold text-navy mb-3 hover:text-cyan transition-colors cursor-pointer">
-                      {post.title}
-                    </h2>
-                    <p className="text-gray-500 text-sm leading-relaxed mb-4">
+                  <div className="p-7">
+                    <Link href={`/blog/${post.slug}`}>
+                      <h2 className="text-xl font-bold text-navy mb-3 hover:text-cyan transition-colors leading-snug">
+                        {post.title}
+                      </h2>
+                    </Link>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-5">
                       {post.excerpt}
                     </p>
-                    <span className="inline-flex items-center gap-2 text-cyan font-medium text-sm cursor-pointer hover:gap-3 transition-all">
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="inline-flex items-center gap-2 text-cyan font-semibold text-sm hover:gap-3 transition-all"
+                    >
                       Read More <i className="fas fa-arrow-right text-xs" />
-                    </span>
+                    </Link>
                   </div>
                 </article>
               ))}
-            </div>
-
-            {/* Pagination */}
-            <div className="flex justify-center gap-2 mt-12">
-              <span className="w-10 h-10 bg-cyan text-navy font-bold rounded-lg flex items-center justify-center">
-                1
-              </span>
-              <span className="w-10 h-10 bg-white text-gray-600 font-medium rounded-lg flex items-center justify-center shadow hover:bg-cyan hover:text-navy transition-colors cursor-pointer">
-                2
-              </span>
-              <span className="w-10 h-10 bg-white text-gray-600 font-medium rounded-lg flex items-center justify-center shadow hover:bg-cyan hover:text-navy transition-colors cursor-pointer">
-                3
-              </span>
-              <span className="w-10 h-10 bg-white text-gray-600 font-medium rounded-lg flex items-center justify-center shadow hover:bg-cyan hover:text-navy transition-colors cursor-pointer">
-                <i className="fas fa-chevron-right text-sm" />
-              </span>
             </div>
           </div>
 
@@ -144,13 +76,18 @@ export default function BlogPage() {
               </h3>
               <div className="space-y-4">
                 {recentPosts.map((post) => (
-                  <div
-                    key={post.id}
-                    className="flex gap-3 cursor-pointer group"
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className="flex gap-3 group"
                   >
-                    <div className="w-[60px] h-[60px] bg-gradient-to-br from-navy-light to-navy rounded-lg flex items-center justify-center shrink-0">
-                      <i
-                        className={`fas ${post.icon} text-white/30 text-lg`}
+                    <div className="w-[60px] h-[60px] rounded-lg shrink-0 relative overflow-hidden">
+                      <Image
+                        src={post.featuredImage}
+                        alt={post.title}
+                        fill
+                        className="object-cover"
+                        sizes="60px"
                       />
                     </div>
                     <div>
@@ -158,10 +95,10 @@ export default function BlogPage() {
                         {post.title}
                       </h4>
                       <span className="text-xs text-gray-400 mt-1 block">
-                        {post.date}
+                        {formatBlogDate(post.publishedAt)}
                       </span>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

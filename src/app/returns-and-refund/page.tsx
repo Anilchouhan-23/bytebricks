@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Returns & Refund Policy",
+  description:
+    "Review ByteBricks Store return eligibility, refund timelines, and replacement guidelines.",
+  path: "/returns-and-refund",
+  keywords: ["Returns Policy", "Refund Policy", "ByteBricks Legal"],
+});
 
 export default function ReturnsPage() {
   return (

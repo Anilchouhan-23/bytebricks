@@ -1,6 +1,20 @@
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Custom Software Development",
+  description:
+    "Build scalable, secure, and business-specific software solutions with ByteBricks custom development services.",
+  path: "/services/custom-software",
+  keywords: [
+    "Custom Software Development",
+    "Enterprise Applications",
+    "API Development",
+    "Legacy Modernization",
+  ],
+});
 
 const capabilities = [
   { title: "Enterprise Applications", desc: "Large-scale systems resolving complex enterprise workflows and unifying data.", icon: "fa-building" },
@@ -80,7 +94,7 @@ export default function CustomSoftwarePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
             <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-100 -translate-y-1/2 -z-10" />
-            {processSteps.map((step, idx) => (
+            {processSteps.map((step) => (
               <div key={step.step} className="bg-white p-6 rounded-2xl text-center relative border border-gray-100 shadow-sm hover:border-cyan/40 transition-colors">
                 <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-navy text-cyan text-sm font-bold w-10 h-10 rounded-full flex items-center justify-center ring-4 ring-white">
                   {step.step}
@@ -97,3 +111,4 @@ export default function CustomSoftwarePage() {
     </>
   );
 }
+

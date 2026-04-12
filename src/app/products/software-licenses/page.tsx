@@ -2,6 +2,20 @@ import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import ProductPageLayout from "@/components/ProductPageLayout";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Software Licenses",
+  description:
+    "Explore genuine software licenses and security products from Tally, Quick Heal, and Microsoft at ByteBricks.",
+  path: "/products/software-licenses",
+  keywords: [
+    "Tally License",
+    "Quick Heal Security",
+    "Microsoft Office License",
+    "Software Licenses India",
+  ],
+});
 
 const products = [
   { name: "Tally Prime - Single User", brand: "Tally", icon: "fa-calculator", image: "/images/brands/tally.jpg", desc: "India's leading business accounting software with GST billing, inventory management, and banking integration." },

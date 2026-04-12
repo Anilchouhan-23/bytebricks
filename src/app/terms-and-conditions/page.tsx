@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Terms & Conditions",
+  description:
+    "Review ByteBricks terms and conditions for use of services, products, website content, and policies.",
+  path: "/terms-and-conditions",
+  keywords: ["Terms and Conditions", "Website Terms", "ByteBricks Legal"],
+});
 
 export default function TermsPage() {
   return (

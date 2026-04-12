@@ -3,6 +3,20 @@ import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Products",
+  description:
+    "Browse ByteBricks product offerings including software licenses, SaaS platforms, and business-ready web assets.",
+  path: "/products",
+  keywords: [
+    "Software Licenses",
+    "Business Software Products",
+    "SaaS Platforms",
+    "ByteBricks Products",
+  ],
+});
 
 const products = [
   {

@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  title: "Offers",
+  description:
+    "Explore current ByteBricks offers on SaaS, mobile app development, and software implementation services.",
+  path: "/offers",
+  keywords: ["IT Service Offers", "Software Deals", "SaaS Package Discounts"],
+});
 
 export default function OffersPage() {
   return (

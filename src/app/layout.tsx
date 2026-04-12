@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "@/components/ScrollToTop";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { getSiteMetadataBase } from "@/lib/seo";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -11,9 +12,17 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: getSiteMetadataBase(),
   title: "ByteBricks Store | IT Solutions & Security Systems",
   description:
     "ByteBricks Store - Leading provider of custom software, SaaS solutions, cloud architecture, and comprehensive digital services in India.",
+  keywords: [
+    "ByteBricks Store",
+    "Custom Software Development",
+    "SaaS Solutions",
+    "Cloud Architecture",
+    "IT Consulting",
+  ],
 };
 
 export default function RootLayout({
